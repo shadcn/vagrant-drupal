@@ -1,6 +1,7 @@
 {
-  "ip": "192.168.44.44",
-  "memory": "1024",
+  "ip": "127.0.0.1",
+  "port": "4567",
+  "memory": "2048",
   "synced_folder": {
     "host_path": "data/",
     "guest_path": "/var/www",
@@ -13,25 +14,18 @@
     "server_root_password": "root"
   },
   "sites": {
-    "drupal7": {
+    "drupal": {
       "account_name": "root",
       "account_pass": "root",
-      "account_mail": "box@example.com",
-      "site_name": "Drupal 7",
-      "site_mail": "box@example.com"
+      "account_mail": "arshad@chummun.com",
+      "site_name": "Drupal",
+      "site_mail": "arshad@chummun.com"
     },
-    "drupal8": {
-      "account_name": "root",
-      "account_pass": "root",
-      "account_mail": "box@example.com",
-      "site_name": "Drupal 8",
-      "site_mail": "box@example.com"
-    }
   },
   "git": {
     "user": {
-      "name": "Example User",
-      "email": "username@example.com"
+      "name": "Arshad Chummun",
+      "email": "arshad@chummun.com"
     },
     "core": {
       "editor": "vi"
