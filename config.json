@@ -1,6 +1,5 @@
 {
-  "ip": "127.0.0.1",
-  "port": "4567",
+  "ip": "10.10.10.10",
   "memory": "2048",
   "synced_folder": {
     "host_path": "data/",
@@ -20,7 +19,7 @@
       "account_mail": "arshad@chummun.com",
       "site_name": "Drupal",
       "site_mail": "arshad@chummun.com"
-    },
+    }
   },
   "git": {
     "user": {
