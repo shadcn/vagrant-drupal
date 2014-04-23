@@ -2,7 +2,7 @@
   "ip": "10.10.10.10",
   "memory": "2048",
   "synced_folder": {
-    "host_path": "data/",
+    "host_path": "www/",
     "guest_path": "/var/www",
     "use_nfs": false
   },
