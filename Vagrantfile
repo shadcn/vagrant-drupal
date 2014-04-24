@@ -10,8 +10,7 @@ Vagrant.configure("2") do |config|
 
   # Networking
   config.vm.network :private_network, ip: vdd_config["ip"]
-  config.vm.hostname = vdd_config["hostname"]
-  config.hostsupdater.aliases = vdd_config["aliases"]
+  config.vm.hostname = vdd_config["sites"].keys[0] + '.local'
 
   # Customize provider
   config.vm.provider :virtualbox do |vb|
