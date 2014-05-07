@@ -1,5 +1,5 @@
 {
-  "ip": "10.10.10.10",
+  "ip": "192.168.56.101",
   "memory": "2048",
   "synced_folder": {
     "host_path": "www/",
