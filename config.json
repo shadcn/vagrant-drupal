@@ -1,6 +1,6 @@
 {
   "ip": "192.168.56.101",
-  "memory": "2048",
+  "memory": "4096",
   "synced_folder": {
     "host_path": "www/",
     "guest_path": "/var/www",
