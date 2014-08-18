@@ -1,8 +1,8 @@
 #!/bin/sh
 #set -e
 
-if [ -e /.behat-installed ]; then
-  echo 'Behat already installed.'
+if [ -e /.selenium-installed ]; then
+  echo 'Selenimum already installed.'
 
 else
   echo ''
@@ -16,7 +16,7 @@ else
   mv selenium-server-standalone-2.42.1.jar /usr/local/bin
 
   # So that running `vagrant provision` doesn't redownload everything
-  touch /.behat-installed
+  touch /.selenium-installed
 fi
 
 # Release old locks
