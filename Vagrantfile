@@ -44,6 +44,8 @@ Vagrant.configure("2") do |config|
     end
   end
 
+  config.vm.provision :shell, :path => "scripts/selenium.sh"
+
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
   config.ssh.forward_agent = true

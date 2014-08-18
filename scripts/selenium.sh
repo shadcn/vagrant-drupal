@@ -6,11 +6,23 @@ if [ -e /.selenium-installed ]; then
 
 else
   echo ''
-  echo 'INSTALLING'
+  echo 'Installing composer'
+  echo '----------'
+
+  # Install Composer
+  curl -sS https://getcomposer.org/installer | php
+  mv composer.phar /usr/local/bin/composer
+
+  echo ''
+  echo 'Installing Java, Firefox and xvfb'
   echo '----------'
 
   # Install Java, Firefox, Xvfb, and unzip
   apt-get -y install openjdk-7-jre-headless firefox xvfb unzip
+
+  echo ''
+  echo 'Installing selenium'
+  echo '----------'
 
   wget "http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.1.jar"
   mv selenium-server-standalone-2.42.1.jar /usr/local/bin
