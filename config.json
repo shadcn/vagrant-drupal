@@ -6,6 +6,7 @@
     "guest_path": "/var/www",
     "use_nfs": false
   },
+  "behat": false,
   "php": {
     "version": false
   },
