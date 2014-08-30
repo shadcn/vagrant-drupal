@@ -15,3 +15,5 @@ Vagrant for Drupal development: A clone of https://drupal.org/project/vdd with s
 Edit config.json and configure IP, Site name, and Git. Set *behat* to true if you need Behat and Selenium. Then run:
     
     $ vagrant up
+
+Once vagrant is provisioned and up, you can remove everything inside www and place Drupal in there.
