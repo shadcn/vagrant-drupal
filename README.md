@@ -12,6 +12,6 @@ Vagrant for Drupal development: A clone of https://drupal.org/project/vdd with s
     $ git clone https://github.com/arshad/vagrant-drupal.git vagrant-SITENAME
     $ cd vagrant-SITENAME
     
-Edit config.json and configure IP, Site name, and Git. Then run:
+Edit config.json and configure IP, Site name, and Git. Set *behat* to true if you need Behat and Selenium. Then run:
     
     $ vagrant up
