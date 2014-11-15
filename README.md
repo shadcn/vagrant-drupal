@@ -17,3 +17,5 @@ Edit config.json and configure IP, Site name, and Git. Set *behat* to true if yo
     $ vagrant up
 
 Once vagrant is provisioned and up, you can remove everything inside www and place Drupal in there.
+
+See https://github.com/arshad/vagrant-d8 for Drupal 8
