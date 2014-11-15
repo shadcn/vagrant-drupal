@@ -1,7 +1,7 @@
-vagrant-drupal
+Vagrant for Drupal 7
 ==============
 
-Vagrant for Drupal development: A clone of https://drupal.org/project/vdd with some tweaks.
+Vagrant for Drupal 7. Code taken from https://drupal.org/project/vdd with some tweaks.
 
 ### Dependencies
 
