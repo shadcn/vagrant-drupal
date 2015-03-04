@@ -12,7 +12,7 @@ else
   # Install Composer
   sudo apt-get install php5-curl
   curl -sS https://getcomposer.org/installer | php
-  mv composer.phar /usr/local/bin/composer
+  sudo mv composer.phar /usr/local/bin/composer
 
   echo ''
   echo 'Installing Java, Firefox and xvfb'
@@ -25,8 +25,8 @@ else
   echo 'Installing selenium'
   echo '----------'
 
-  wget "http://selenium-release.storage.googleapis.com/2.42/selenium-server-standalone-2.42.1.jar"
-  sudo mv selenium-server-standalone-2.42.1.jar /usr/local/bin
+  sudo wget "http://selenium-release.storage.googleapis.com/2.45/selenium-server-standalone-2.45.0.jar"
+  sudo mv selenium-server-standalone-2.45.0.jar /usr/local/bin
 
   # So that running `vagrant provision` doesn't redownload everything
   sudo touch /.selenium-installed
@@ -39,6 +39,6 @@ sudo rm -rf .X*-lock
 
 echo "Starting Selenium Server. Default screen resolution: 1280x1024."
 cd /usr/local/bin
-DISPLAY=:1 xvfb-run --server-args="-screen 0 1280x1024x8" java -jar ./selenium-server-standalone-2.42.1.jar > /dev/null 2>&1 &
+DISPLAY=:1 xvfb-run --server-args="-screen 0 1280x1024x8" java -jar ./selenium-server-standalone-2.45.0.jar > /dev/null 2>&1 &
 
 echo "Give Selenium Server a few minutes to fireup, then run your BDD tests."
