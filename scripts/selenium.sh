@@ -10,6 +10,7 @@ else
   echo '----------'
 
   # Install Composer
+  sudo apt-get install php5-curl
   curl -sS https://getcomposer.org/installer | php
   mv composer.phar /usr/local/bin/composer
 
@@ -18,7 +19,7 @@ else
   echo '----------'
 
   # Install Java, Firefox, Xvfb, and unzip
-  apt-get -y install openjdk-7-jre-headless firefox xvfb unzip
+  sudo apt-get -y install openjdk-7-jre-headless firefox xvfb unzip
 
   echo ''
   echo 'Installing selenium'
