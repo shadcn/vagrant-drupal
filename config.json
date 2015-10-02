@@ -8,7 +8,7 @@
   },
   "behat": false,
   "php": {
-    "version": false
+    "version": "5.5.9"
   },
   "mysql": {
     "server_root_password": "root"
