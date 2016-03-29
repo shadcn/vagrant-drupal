@@ -1,40 +1,30 @@
 {
-  "ip": "192.168.56.101",
-  "memory": "4096",
-  "synced_folder": {
-    "host_path": "www/",
-    "guest_path": "/var/www",
-    "use_nfs": false
+  "vm": {
+    "ip": "192.168.44.44",
+    "memory": "2048",
+    "synced_folders": [
+      {
+        "host_path": "www/",
+        "guest_path": "/var/www",
+        "type": "nfs"
+      }
+    ],
+    "forwarded_ports": []
   },
-  "behat": false,
-  "php": {
-    "version": false
-  },
-  "mysql": {
-    "server_root_password": "root"
-  },
-  "sites": {
-    "drupal": {
-      "account_name": "root",
-      "account_pass": "root",
-      "account_mail": "arshad@chummun.com",
-      "site_name": "Drupal",
-      "site_mail": "arshad@chummun.com"
+  "vdd": {
+    "sites": {
+      "drupal": {
+        "account_name": "root",
+        "account_pass": "root",
+        "account_mail": "root@example.com",
+        "site_name": "drupal",
+        "site_mail": "root@example.com",
+        "vhost": {
+          "document_root": "drupal",
+          "url": "drupal.dev",
+          "alias": ["www.drupal.dev"]
+        }
+      }
     }
-  },
-  "git": {
-    "user": {
-      "name": "Arshad Chummun",
-      "email": "arshad@chummun.com"
-    },
-    "core": {
-      "editor": "vi"
-    },
-    "color": {
-      "ui": true
-    }
-  },
-  "custom_roles": [
-    "vdd_example"
-  ]
+  }
 }

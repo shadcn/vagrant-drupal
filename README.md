@@ -1,7 +1,7 @@
-Vagrant for Drupal 7
+Vagrant for Drupal
 ==============
 
-Vagrant for Drupal 7. Code taken from https://drupal.org/project/vdd with some tweaks.
+Vagrant for Drupal. Code taken from https://drupal.org/project/vdd with some tweaks.
 
 ### Dependencies
 
@@ -9,13 +9,9 @@ Vagrant for Drupal 7. Code taken from https://drupal.org/project/vdd with some t
     
 ### Installation
 
-    $ git clone https://github.com/arshad/vagrant-drupal.git vagrant-SITENAME
-    $ cd vagrant-SITENAME
+    $ git clone https://github.com/arshad/vagrant-drupal.git vagrant-box
+    $ cd vagrant-box
     
-Edit config.json and configure IP, Site name, and Git. Set *behat* to true if you need Behat and Selenium. Then run:
+Edit config.json and add your sites.
     
     $ vagrant up
-
-Once vagrant is provisioned and up, you can remove everything inside www and place Drupal in there.
-
-See https://github.com/arshad/vagrant-d8 for Drupal 8
